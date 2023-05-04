@@ -1,16 +1,19 @@
-{% extends 'learning_logs/base.html' %}
-
-{% block content %}
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Topic</title>
 </head>
+
+{% extends 'learning_logs/base.html' %}
+
+{% block content %}
+
 <body>
     <p>Topic: {{ topic }}</p>
     <p>Entries:</p>
+
     <ul>
         {% for entry in entries %}
             <li>
@@ -22,6 +25,7 @@
         {% endfor %}
     </ul>
 </body>
-</html>
 
 {% endblock content %}
+
+</html>
